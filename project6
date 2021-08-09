@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile Web App</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<link rel="stylesheet" href="project5.min.css" />
+<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+</head>
+<body>
+
+<div id="page" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a">
+	  <div class="logo"><img src="images/rabbit.png" width="150" height="100" alt=""/></div>
+	</div>
+
+
+	<div data-role="panel" id="myPanel">
+		<h2>Extra Links</h2>
+
+		<p><a href="https://oceanwide-expeditions.com/">Oceanwide Expeditions</a><br></br>
+		<a href="https://a-z-animals.com/">AZ Animals</a></br></br>
+	<a href="https://animaldiversity.org/">Animal Diversity</a></br></br></p>
+	</div>
+
+
+  <div data-role="header" data-theme="a">
+    <h1>Favorite Animals</h1>
+			<a href="#myPanel" class="ui-btn ui-btn-inline">Open Panel</a>
+  </div>
+
+	<div data-role="content">
+		<p> This website is a documentation of my top five favorite animals, sorted by Land, Aquatic, and Air.
+		 Each page contains a list of the names of my favorite animals from each category, accompanied by pictures on the sidebars.
+		 The website should be able to work on all platforms and function just as well on mobile without any formatting problems.
+			It is created with HTML, CSS, Javascript, and JQuery for the Rasmussen University Class "Mobile Application Development"
+			taught by Professor Gary Tanner. </p>
+			<br>
+		<ul data-role="listview" data-theme="a" data-filter="true" data-icon="info">
+			<li><a href="#section1">Land Animals</a></li>
+      <li><a href="#section2">Aquatic Animals</a></li>
+			<li><a href="#section3">Birds</a></li>
+			<li><a href="#section4">Prehistoric Animals</a></li>
+			<li><a href="#section5">Insects</a></li>
+			<li><a href="#section6">Submit Your Favorites</a></li>
+
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="a">
+	  <h4>Amy Cook &copy; 2021</h4>
+	</div>
+</div>
+
+<div id="section1" data-role="page" data-theme="b" data-add-back-btn="true">
+	<div data-role="header" data-theme="b" data-add-back-btn="true">
+		<a data-role="button" data-rel="back">Back</a>
+	  <h1>Section 1</h1>
+	</div>
+	<div data-role="content">
+	  <h3>Favorite Land Animals</h3>
+<p> Here is a numbered list of the best land animals.</p>
+<ol data-role="listview" data-theme="b" data-filter="true" data-icon="info">
+  <li>Arctic Hare</li>
+  <li>Snow Leopard</li>
+  <li>Tiger</li>
+  <li>Binturong</li>
+	<li>Capybara</li>
+</ol>
+	</div>
+	<div data-role="footer" data-theme="b">
+	  <h4>Amy Cook &copy; 2021</h4>
+	</div>
+</div>
+
+<div id="section2" data-role="page" data-theme="c" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" data-add-back-btn="true">
+		<a data-role="button" data-rel="back">Back</a>
+		<h1>Section 2</h1>
+	</div>
+	<div data-role="content">
+		<h3>Favorite Aquatic Animals</h3>
+<p> Here is a numbered list of the best ocean and freshwater animals.</p>
+		<ol data-role="listview" data-theme="c" data-filter="true" data-icon="info">
+		  <li>Oarfish</li>
+		  <li>Coelacanth</li>
+		  <li>Arapaima</li>
+		  <li>Great White Shark</li>
+			<li>Whale Shark</li>
+		</ol>
+	</div>
+	<div data-role="footer" data-theme="c">
+		<h4>Amy Cook &copy; 2021</h4>
+	</div>
+</div>
+
+<div id="section3" data-role="page" data-theme="b" data-add-back-btn="true">
+	<div data-role="header" data-theme="b" data-add-back-btn="true">
+		<a data-role="button" data-rel="back">Back</a>
+		<h1>Section 3</h1>
+	</div>
+	<div data-role="content">
+		<h3>Favorite Birds</h3>
+<p> Here is a numbered list of the best birds.</p>
+		<ol data-role="listview" data-theme="b" data-filter="true" data-icon="info">
+		  <li>Harpy Eagle</li>
+		  <li>Crow</li>
+		  <li>Bald Eagle</li>
+		  <li>Barn Owl</li>
+			<li>Barred Owl</li>
+		</ol>
+	</div>
+	<div data-role="footer" data-theme="b">
+	  <h4>Amy Cook &copy; 2021</h4>
+	</div>
+</div>
+
+<div id="section4" data-role="page" data-theme="c" data-add-back-btn="true">
+	<div data-role="header" data-theme="c" data-add-back-btn="true">
+		<a data-role="button" data-rel="back">Back</a>
+		<h1>Section 4</h1>
+	</div>
+  <div data-role="content">
+		<h3>Favorite Prehistoric Animals</h3>
+ <p> Here is a numbered list of the best prehistoric animals.</p>
+ 	 <ol data-role="listview" data-theme="c" data-filter="true" data-icon="info">
+ 		 <li>Liopleurodon</li>
+ 		 <li>Dunkleosteus</li>
+ 		 <li>Paraceratherium</li>
+ 		 <li>Quetzalcoatlus</li>
+ 		 <li>Leedsichthys</li>
+ 	 </ol>
+ </div>
+	<div data-role="footer" data-theme="c">
+		<h4>Amy Cook &copy; 2021</h4>
+	</div>
+</div>
+
+<div data-role="page" id="section5" data-theme="b" data-add-back-btn="true">
+	<div data-role="header" data-theme="b" data-add-back-btn="true">
+		<a data-role="button" data-rel="back">Back</a>
+		<h1>Section 5</h1>
+	</div>
+  <div data-role="content">
+		<h3>Favorite Insects</h3>
+<p> Here is a numbered list of the best insects.</p>
+		<ol data-role="listview" data-theme="b" data-filter="true" data-icon="info">
+		  <li>Rosy Maple Moth</li>
+		  <li>Luna Moth</li>
+		  <li>Hercules Beetle</li>
+		  <li>Bumblebee</li>
+			<li>Praying Mantis</li>
+		</ol>
+	</div>
+	<div data-role="footer" data-theme="b">
+		<h4>Amy Cook &copy; 2021</h4>
+	</div>
+</div>
+
+<div data-role="page" id="section6" data-theme="c" data-add-back-btn="true">
+  <div data-role="header" data-theme="c" data-add-back-btn="true">
+		<a data-role="button" data-rel="back">Back</a>
+    <h1>Submit Your Favorite</h1>
+  </div>
+	<div data-role="content">
+
+		<div class="ui-grid-d">
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/1.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/2.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/3.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/4.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-e"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/5.jpg" width="100%" height="100%" alt=""/></div></div>
+
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/6.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/7.png" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/8.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/9.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-e"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/10.jpg" width="100%" height="100%" alt=""/></div></div>
+
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/11.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/12.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/13.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/14.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-e"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/15.jpg" width="100%" height="100%" alt=""/></div></div>
+
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/16.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/17.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/18.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/19.png" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-e"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/20.jpg" width="100%" height="100%" alt=""/></div></div>
+
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/21.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/22.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/23.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/24.jpg" width="100%" height="100%" alt=""/></div></div>
+		<div class="ui-block-e"><div class="ui-bar ui-bar-a" style="height:200px"><img src="images/25.jpg" width="100%" height="100%" alt=""/></div></div>
+		</div></div>
+
+		<form action="form2.php" method="post">
+	<label for="fname">First name:</label>
+	<input type="text" name="fname" id="fname" required data-clear-btn="true">
+	<label for="fname">Age:</label>
+	<input type="number" name="age" id="age" required data-clear-btn="true">
+	<label for="fname">Email:</label>
+	<input type="email" name="email" id="email" required data-clear-btn="true">
+	<label for="fname">Favorite Animal:</label>
+	<input type="text" name="fav" id="fav" required data-clear-btn="true">
+	<input type="reset" value="Reset Button">
+	<input type="submit" value="Submit Button">
+
+	</form>
+		<p>
+Please add any other favorite animals in this box!
+</p>
+<textarea class="localstorage" placeholder="Anything you type here will be saved with HTML5 localStorage." autofocus></textarea>
+<button class="clear">Clear localStorage</button>
+<button class="empty">Empty localStorage</button>
+</div>
+  <div data-role="footer" data-theme="c">
+    <h4>Amy Cook &copy; 2021</h4>
+  </div>
+</div>
+
+
+  <div data-role="footer" data-theme="a">
+    <h4>Footer</h4>
+  </div>
+</div>
+</body>
+</html>
+<script>
+(function() {
+
+	var rasm = document.querySelector('.localstorage');
+
+	function supportsLocalStorage() {
+		return typeof(Storage)!== 'undefined';
+	}
+
+	if (!supportsLocalStorage()) {
+		rasm.value = 'Your browser does not support localStorage.';
+	} else {
+		try {
+			setInterval(function() {
+				localStorage.setItem('autosave', rasm.value);
+			}, 1000);
+		} catch (e) {
+			if (e == QUOTA_EXCEEDED_ERR) {
+				alert('Quota exceeded!');
+			}
+		}
+		if (localStorage.getItem('autosave')) {
+			rasm.value = localStorage.getItem('autosave');
+		}
+		document.querySelector('.clear').onclick = function() {
+			rasm.value = '';
+			localStorage.removeItem('autosave');
+		};
+		document.querySelector('.empty').onclick = function() {
+			rasm.value = '';
+			localStorage.clear();
+		};
+	}
+
+})();
+</script>
